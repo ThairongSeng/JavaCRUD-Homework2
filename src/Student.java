@@ -240,19 +240,8 @@ public class Student {
 
         void outputInformation()
         {
-
-//            System.out.println("\t\tID\t\tName\t\tGender\t\tAddress\t\tJava\t\tSpring\t\tUI\t\tDatabase\t\tGit\t\tTotal\t\tAverage");
-            System.out.print(" \t\t\t"+id);
-            System.out.print("\t\t\t"+name);
-            System.out.print("\t\t\t"+gender);
-            System.out.print("\t\t\t"+address);
-            System.out.print("\t\t\t"+java);
-            System.out.print("\t\t\t"+spring);
-            System.out.print("\t\t\t"+ui);
-            System.out.print("\t\t\t"+database);
-            System.out.print("\t\t\t"+git);
-            System.out.print("\t\t\t"+total());
-            System.out.println("\t\t\t"+avg());
+//            System.out.println(String.format("%-15s %-20s %-20s %-15s %-15s %-15s %-15s %-15s %-15s %-15s %-15s","ID","Name", "Gender","Address","Java","Spring","UI","Database","Git","Total","Average"));
+            System.out.println(String.format("%-15s %-20s %-20s %-15s %-15s %-15s %-15s %-15s %-15s %-15s %-15s",id,name, gender,address,java,spring,ui,database,git,total(),avg()));
         }
     public void setId(int id) {
         this.id = id;
